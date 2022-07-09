@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1145
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "陈登佳文件与项目管理系统", "陈登佳文件与项目管理系统\陈登佳文件与项目管理系统.csproj", "{F29031C9-7A87-4706-8E87-8D1E3CA2A1D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F29031C9-7A87-4706-8E87-8D1E3CA2A1D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F29031C9-7A87-4706-8E87-8D1E3CA2A1D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F29031C9-7A87-4706-8E87-8D1E3CA2A1D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F29031C9-7A87-4706-8E87-8D1E3CA2A1D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {836FB60D-4B43-4D97-86ED-9C8FCDE503AC}
+	EndGlobalSection
+EndGlobal
