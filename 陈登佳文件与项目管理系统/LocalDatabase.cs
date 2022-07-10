@@ -15,7 +15,7 @@ namespace 陈登佳文件与项目管理系统
 	public class LocalDatabase
 	{
 		public static string dbName = "LocalDatabase.sqlite";
-		private static LocalDatabase instance = new LocalDatabase();
+		private static LocalDatabase instance;
 
 		SQLiteConnection con;
 		SQLiteCommand cmd;
@@ -110,7 +110,12 @@ namespace 陈登佳文件与项目管理系统
 
 		public static LocalDatabase getInstance()
 		{
-			return instance;
+			return SingletonHolder.instance;
+		}
+
+		private static class SingletonHolder
+		{
+			public static LocalDatabase instance = new LocalDatabase();
 		}
 	}
 }
