@@ -15,6 +15,9 @@ namespace 陈登佳文件与项目管理系统
 	 *		利用get实现公有属性读取私有属性
 	 * 编写人：陈登佳
 	 */
+	 /// <summary>
+	 /// 数据库实体类
+	 /// </summary>
 	public abstract class Entity
 	{
 		public static LocalDatabase ld = LocalDatabase.getInstance();
@@ -52,6 +55,9 @@ namespace 陈登佳文件与项目管理系统
 		}
 	}
 
+	/// <summary>
+	/// 项目类型
+	/// </summary>
 	public class Class : Entity
 	{
 		int cid;		// not null
@@ -132,6 +138,9 @@ namespace 陈登佳文件与项目管理系统
 		}
 	}
 
+	/// <summary>
+	/// 项目版本
+	/// </summary>
 	public class Version : Entity
 	{
 		string vid;			// not null

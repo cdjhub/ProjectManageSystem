@@ -22,3 +22,4 @@ D:\source\repos\陈登佳文件与项目管理系统\陈登佳文件与项目管
 D:\source\repos\陈登佳文件与项目管理系统\陈登佳文件与项目管理系统\obj\Debug\陈登佳文件与项目管理系统.NewVersionForm.resources
 D:\source\repos\陈登佳文件与项目管理系统\陈登佳文件与项目管理系统\obj\Debug\陈登佳文件与项目管理系统.ClassChooseForm.resources
 D:\source\repos\陈登佳文件与项目管理系统\陈登佳文件与项目管理系统\obj\Debug\陈登佳文件与项目管理系统.NewProjectForm.resources
+D:\source\repos\陈登佳文件与项目管理系统\陈登佳文件与项目管理系统\obj\Debug\陈登佳文件与项目管理系统.csprojAssemblyReference.cache

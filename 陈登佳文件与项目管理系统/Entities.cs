@@ -36,6 +36,11 @@ namespace 陈登佳文件与项目管理系统
 			entities = projects;
 		}
 
+		/// <summary>
+		/// 根据是否分类进行查询
+		/// </summary>
+		/// <param name="cid">分类id</param>
+		/// <returns></returns>
 		public static List<Project> select(int cid=-2)
 		{
 			try
@@ -44,18 +49,33 @@ namespace 陈登佳文件与项目管理系统
 					MessageBox.Show("没有创建数据文件!");
 				List<Project> res = new List<Project>();
 				DataTable dt;
-				if (cid == -2)
-					dt = ld.select("select * from project;");
-				else
-					dt = ld.select("select * from project where cid=" +
-						Entity.int2str(cid) + 
-						";");
+				string sql = "select * from project;";
+				dt = ld.select(sql);
 
-				foreach (DataRow dr in dt.Rows)
+				//if (cid == -2)
+				//	dt = ld.select("select * from project;");
+				//else
+				//	dt = ld.select("select * from project where cid=" +
+				//		Entity.int2str(cid) + 
+				//		";");
+				// 先从数据库读出来再进行选择，感觉上可能快一些
+				if (cid == -2)
 				{
-					Project project = new Project();
-					project.read(dr);
-					res.Add(project);
+					foreach (DataRow dr in dt.Rows)
+					{
+						Project project = new Project();
+						project.read(dr);
+						res.Add(project);
+					}
+				}else
+				{
+					var query = from DataRow dr in dt.Rows where dr["cid"].ToString().Equals(cid.ToString()) select dr;
+					foreach (DataRow dr in query)
+					{
+						Project project = new Project();
+						project.read(dr);
+						res.Add(project);
+					}
 				}
 				return res;
 			}

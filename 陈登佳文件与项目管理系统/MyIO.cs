@@ -71,7 +71,7 @@ namespace 陈登佳文件与项目管理系统
 				foreach (string folder in folders)
 				{
 					string name = System.IO.Path.GetFileName(folder);
-					if (!string.IsNullOrEmpty(ignoreFolder) && name.Equals(ignoreFolder))  // 忽略某个文件
+					if (!string.IsNullOrEmpty(ignoreFolder) && name.Equals(ignoreFolder))  // 忽略某个文件夹
 						continue;
 					DirectoryInfo di = new DirectoryInfo(folder);
 					di.Delete(true);
